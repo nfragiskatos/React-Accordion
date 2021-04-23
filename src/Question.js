@@ -10,7 +10,7 @@ const Question = ({ title, info }) => {
 					{isCollapsed ? <AiOutlinePlus /> : <AiOutlineMinus />}
 				</button>
 			</header>
-			<p>{isCollapsed ? '' : info}</p>
+			{!isCollapsed && <p>{info}</p>}
 		</section>
 	);
 };
